@@ -5,7 +5,7 @@
 
         @if(Auth::user()->user_type == 'admin')
             <a href="{{ route('tasks.create') }}" class="px-4 py-2 bg-blue-500 font-semibold rounded-lg hover:bg-blue-600">
-            Add Task
+            {{ __('Add Task') }}
             </a>
         @endif
     </div>
